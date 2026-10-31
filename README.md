@@ -1,7 +1,7 @@
 # nix-holds-fleet
 
 The packages the kleinbem fleet holds back from nixos-unstable, with
-[nix-holds](https://github.com/kleinbem/nix-holds). The format of
+[nix-holds](https://github.com/kleinbem-dev/nix-holds). The format of
 `held-packages.json` and the lifecycle are described there.
 
 Used by nix-config (`base.nix`, container-factory), nix-presets and
