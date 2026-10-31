@@ -6,7 +6,7 @@
     # Consumers make this follow their own nixpkgs-stable.
     nixpkgs-stable.url = "github:NixOS/nixpkgs/nixos-26.05";
     nix-holds = {
-      url = "github:kleinbem/nix-holds";
+      url = "github:kleinbem-dev/nix-holds";
       inputs.nixpkgs.follows = "nixpkgs";
       inputs.nixpkgs-stable.follows = "nixpkgs-stable";
     };
