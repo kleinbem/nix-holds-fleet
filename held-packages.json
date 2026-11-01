@@ -47,7 +47,7 @@
         "hash": "sha256-QyG5gTn2LfZwPVTGWcTnNoc7oq830Wv/VyNmEbPDN+c="
       }
     ],
-    "reason": "rustc's stdarch and nixpkgs' LLVM disagree on an AVX-512 VNNI intrinsic (vpdpbusd), so qdrant's quantization crate fails to compile; this source patch from NixOS/nixpkgs#553347 disables those code paths. Ends once nixpkgs' qdrant builds again (rustc on LLVM 23, NixOS/nixpkgs#578990, plus a zstd input on staging-next).",
+    "reason": "rustc's stdarch and nixpkgs' LLVM disagree on an AVX-512 VNNI intrinsic (vpdpbusd), so qdrant's quantization crate fails to compile; this source patch from NixOS/nixpkgs#553347 disables those code paths. Ends once nixpkgs' qdrant builds again (rustc on LLVM 23, NixOS/nixpkgs#578990, plus a zstd input on staging-next). Held on stable (1.17.1) from 2026-10-13 until this fix on 2026-11-01.",
     "link": "https://github.com/NixOS/nixpkgs/issues/553191"
   }
 }
