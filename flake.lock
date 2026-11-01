@@ -10,11 +10,11 @@
         ]
       },
       "locked": {
-        "lastModified": 1793422466,
-        "narHash": "sha256-mWzbKmZY/goOIM3GcbL5ZhyHYDED+ivofhhdwQnoVNM=",
+        "lastModified": 1793512320,
+        "narHash": "sha256-jE/W9Vw2iFnWB1jV+6nCw1bnkof/AtKnwPzDkec8p6c=",
         "owner": "kleinbem-dev",
         "repo": "nix-holds",
-        "rev": "d5807a0081bcec1e6e43ebf1c5b7f67647402314",
+        "rev": "f34fae3a16d9e22e8e09a1e300255eef16288bbe",
         "type": "github"
       },
       "original": {
