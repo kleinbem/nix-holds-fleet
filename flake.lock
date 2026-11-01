@@ -26,11 +26,11 @@
     "nix-packages": {
       "flake": false,
       "locked": {
-        "lastModified": 1793400302,
-        "narHash": "sha256-omGP8vmbYKdijl2BCsI0imYnqfw9BbsvYOtWcoMYSXY=",
+        "lastModified": 1793541918,
+        "narHash": "sha256-tWlLYCMy5jxMxgEWi+0WML3EEHLCIqfwi/vzgyzwXEE=",
         "owner": "kleinbem",
         "repo": "nix-packages",
-        "rev": "8688dcbf77a824fef4bdc4af369b44f190f92f11",
+        "rev": "31b6a5e150029424ec05744cb24b8292ea9bea76",
         "type": "github"
       },
       "original": {
