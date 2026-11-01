@@ -7,6 +7,9 @@ on:
   schedule:
     - cron: '30 4 * * 1'
 
+# Every step that needs GitHub gets the App token explicitly.
+permissions: {}
+
 jobs:
   release:
     runs-on: ubuntu-latest
