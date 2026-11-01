@@ -39,9 +39,15 @@
     "link": "https://github.com/NixOS/nixpkgs/pull/563493"
   },
   "qdrant": {
-    "from": "stable",
-    "since": "2026-10-13",
-    "reason": "Fails to build in nixos-unstable (rustc/LLVM stdarch drift).",
+    "from": "current",
+    "since": "2026-11-01",
+    "patches": [
+      {
+        "url": "https://raw.githubusercontent.com/MiniHarinn/nixpkgs/b650fbaa91851f4e57f66ab811fdffcd5bac31c1/pkgs/by-name/qd/qdrant/0001-disable-avx512vnni.patch",
+        "hash": "sha256-QyG5gTn2LfZwPVTGWcTnNoc7oq830Wv/VyNmEbPDN+c="
+      }
+    ],
+    "reason": "rustc's stdarch and nixpkgs' LLVM disagree on an AVX-512 VNNI intrinsic (vpdpbusd), so qdrant's quantization crate fails to compile; this source patch from NixOS/nixpkgs#553347 disables those code paths. Ends once nixpkgs' qdrant builds again (rustc on LLVM 23, NixOS/nixpkgs#578990, plus a zstd input on staging-next). Held on stable (1.17.1) from 2026-10-13 until this fix on 2026-11-01.",
     "link": "https://github.com/NixOS/nixpkgs/issues/553191"
   }
 }
