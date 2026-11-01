@@ -1,4 +1,4 @@
-# nix-holds-fleet
+# nix-detour-fleet
 
 The packages the kleinbem fleet holds back from nixos-unstable, with
 [nix-detour](https://github.com/kleinbem-dev/nix-detour). The format of

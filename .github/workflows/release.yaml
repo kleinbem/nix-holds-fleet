@@ -46,5 +46,5 @@ jobs:
           curl -fsS --max-time 15 \
             -H "Title: packages held back from nixpkgs for more than 14 days" \
             -H "Tags: warning" \
-            -d "Still held: $long- they miss the fixes of the fleet's nixpkgs. Their links are in kleinbem/nix-holds-fleet held-packages.json. Run: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}" \
+            -d "Still held: $long- they miss the fixes of the fleet's nixpkgs. Their links are in kleinbem/nix-detour-fleet held-packages.json. Run: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}" \
             "https://ntfy.kleinbem.dev/$NTFY_TOPIC"
