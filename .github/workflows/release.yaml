@@ -29,7 +29,7 @@ jobs:
           attic-token: ${{ secrets.ATTIC_PULL_TOKEN }}
           netbird-setup-key: ${{ secrets.NETBIRD_SETUP_KEY_EPHEMERAL }}
 
-      - uses: kleinbem-dev/nix-holds@f34fae3a16d9e22e8e09a1e300255eef16288bbe # v0.2.0
+      - uses: kleinbem-dev/nix-holds@f06eb3ad2cfd58582c1aa2fd35834291fc9c7cab # main
         id: release
         with:
           token: ${{ steps.app-token.outputs.token }}
