@@ -5,8 +5,8 @@
     nixpkgs.url = "github:NixOS/nixpkgs/nixos-unstable";
     # Consumers make this follow their own nixpkgs-stable.
     nixpkgs-stable.url = "github:NixOS/nixpkgs/nixos-26.05";
-    nix-holds = {
-      url = "github:kleinbem-dev/nix-holds";
+    nix-detour = {
+      url = "github:kleinbem-dev/nix-detour";
       inputs.nixpkgs.follows = "nixpkgs";
       inputs.nixpkgs-stable.follows = "nixpkgs-stable";
     };
@@ -24,7 +24,7 @@
       self,
       nixpkgs,
       nixpkgs-stable,
-      nix-holds,
+      nix-detour,
       nix-packages,
     }:
     let
@@ -37,7 +37,7 @@
 
       holds =
         extraOverlays:
-        nix-holds.lib.mkHolds {
+        nix-detour.lib.mkHolds {
           holds = ./held-packages.json;
           inherit nixpkgs-stable extraOverlays;
         };

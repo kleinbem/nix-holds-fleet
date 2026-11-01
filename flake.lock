@@ -1,6 +1,6 @@
 {
   "nodes": {
-    "nix-holds": {
+    "nix-detour": {
       "inputs": {
         "nixpkgs": [
           "nixpkgs"
@@ -10,16 +10,16 @@
         ]
       },
       "locked": {
-        "lastModified": 1793516193,
-        "narHash": "sha256-trfqAT3x/R/NnLkLv70c0yR4YCDR7P8qPUuEENf4fZE=",
+        "lastModified": 1793520739,
+        "narHash": "sha256-bZtpkIgtQWJrISc+9lhH2UcWWDvmkeoDnDU3iM3WYQY=",
         "owner": "kleinbem-dev",
-        "repo": "nix-holds",
-        "rev": "f06eb3ad2cfd58582c1aa2fd35834291fc9c7cab",
+        "repo": "nix-detour",
+        "rev": "5abc0ab5998f61f51bff1a48ad5db5ecbea803f0",
         "type": "github"
       },
       "original": {
         "owner": "kleinbem-dev",
-        "repo": "nix-holds",
+        "repo": "nix-detour",
         "type": "github"
       }
     },
@@ -73,7 +73,7 @@
     },
     "root": {
       "inputs": {
-        "nix-holds": "nix-holds",
+        "nix-detour": "nix-detour",
         "nix-packages": "nix-packages",
         "nixpkgs": "nixpkgs",
         "nixpkgs-stable": "nixpkgs-stable"
